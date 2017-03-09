@@ -2,8 +2,8 @@
 
 import argparse
 parser = argparse.ArgumentParser(description='DHCP Parser')
-parser.add_argument('-i', '--input', help='Input File selection')
-parser.add_argument('-o', '--output', help='Output File')
+parser.add_argument('-i', '--input', help='Input File selection', required=1)
+parser.add_argument('-o', '--output', help='Output File', required=1)
 #parser.add_argument('-d', '--directory', help='Directory location')
 args = parser.parse_args()
 
